@@ -1055,9 +1055,9 @@ button:focus-visible {
     gap: 14px;
     font-size: 12px;
   }
-
-  .primary-nav a:not(.nav-resume) {
-    display: none;
+   
+  .nav-resume {
+    padding: 5px 8px;
   }
 
   .hero,
