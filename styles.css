@@ -455,8 +455,8 @@ code {
   text-transform: uppercase;
 }
 
-.project-card > h2,
-.project-card__header h2 {
+.project-card > h3,
+.project-card__header h3 {
   margin: 0;
   font-size: clamp(30px, 4vw, 49px);
   font-weight: 600;
@@ -489,10 +489,6 @@ code {
     var(--panel-light);
   background-size: 20px 20px;
   border-radius: 28px;
-}
-
-.project-card--featured:hover {
-  transform: none;
 }
 
 .project-card__header {
@@ -1042,6 +1038,10 @@ button:focus-visible {
    RESPONSIVE: MOBILE
    ============================================ */
 
+/* ============================================
+   RESPONSIVE: MOBILE
+   ============================================ */
+
 @media (max-width: 680px) {
   body {
     font-size: 16px;
@@ -1071,6 +1071,10 @@ button:focus-visible {
     padding-top: 48px;
   }
 
+  .hero-headline {
+    font-size: 36px;
+  }
+
   .redline {
     padding: 18px;
   }
@@ -1086,7 +1090,7 @@ button:focus-visible {
 
   .projects {
     width: min(100% - 24px, var(--wide-measure));
-    padding: 56px 0 72px;
+    padding: 56px 18px 72px;
   }
 
   .project-card {
@@ -1107,12 +1111,14 @@ button:focus-visible {
     gap: 7px;
   }
 
-  .problem-visual__sources {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .problem-visual__sources,
+  .lifecycle-grid,
+  .results-grid {
+    grid-template-columns: 1fr;
   }
 
-  .lifecycle-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .source-card {
+    min-height: 68px;
   }
 
   .responsibility-grid {
@@ -1123,20 +1129,93 @@ button:focus-visible {
     grid-template-columns: 1fr;
     gap: 7px;
   }
-}
 
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-links span {
+    display: none;
+  }
+}
 
 /* ============================================
    RESPONSIVE: SMALL MOBILE
    ============================================ */
 
+/* ============================================
+   RESPONSIVE: MOBILE
+   ============================================ */
+
 @media (max-width: 680px) {
-  .projects {
-    padding: 56px 18px 72px;
+  body {
+    font-size: 16px;
+  }
+
+  .site-header {
+    padding: 16px 18px;
+  }
+
+  .primary-nav {
+    gap: 14px;
+    font-size: 12px;
+  }
+
+  .primary-nav a:not(.nav-resume) {
+    display: none;
+  }
+
+  .hero,
+  .about,
+  .domain-nav {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero {
+    padding-top: 48px;
   }
 
   .hero-headline {
     font-size: 36px;
+  }
+
+  .redline {
+    padding: 18px;
+  }
+
+  .redline-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .redline-tag {
+    margin-top: 0;
+  }
+
+  .projects {
+    width: min(100% - 24px, var(--wide-measure));
+    padding: 56px 18px 72px;
+  }
+
+  .project-card {
+    min-height: auto;
+    border-radius: 18px;
+  }
+
+  .project-card--featured {
+    border-radius: 20px;
+  }
+
+  .project-card__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .case-section__heading {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .problem-visual__sources,
@@ -1147,6 +1226,15 @@ button:focus-visible {
 
   .source-card {
     min-height: 68px;
+  }
+
+  .responsibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-case-study__block {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .footer-links {
