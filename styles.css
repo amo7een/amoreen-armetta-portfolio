@@ -302,41 +302,40 @@ code {
    ============================================ */
 
 .about {
-  max-width: var(--measure);
+  max-width: 900px;
   margin: 0 auto;
   padding: 56px 24px 72px;
 }
 
-.filed-under {
-  margin: 0 0 12px;
-  color: var(--teal);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.about-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
 }
 
-.about-intro {
-  margin: 0 0 12px;
-  font-family: var(--font-display);
-  font-size: clamp(25px, 4vw, 34px);
-  font-weight: 600;
-  line-height: 1.2;
+.about-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
 }
 
-.about-text {
-  max-width: 66ch;
-  margin: 0 0 18px;
-  color: var(--ink-soft);
-  font-size: 18px;
-  line-height: 1.7;
+.about-copy {
+  min-width: 0;
 }
 
-.about-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 24px;
+@media (max-width: 680px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-photo {
+    width: 130px;
+  }
 }
 
 /* ============================================
