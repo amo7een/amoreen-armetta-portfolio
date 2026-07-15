@@ -688,38 +688,6 @@ code {
 
 
 /* ============================================
-   LIFECYCLE GRID
-   ============================================ */
-
-.lifecycle-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.lifecycle-step {
-  min-height: 150px;
-  padding: 20px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-medium);
-}
-
-.lifecycle-step span {
-  color: var(--redline);
-  font-size: 11px;
-}
-
-.lifecycle-step p {
-  margin: 32px 0 0;
-  font-weight: 600;
-  line-height: 1.45;
-}
-
-
-/* ============================================
    WORKFLOW
    ============================================ */
 
@@ -899,6 +867,43 @@ code {
   border-color: var(--teal);
 }
 
+/* ============================================
+   UX WRITING IMAGE GALLERY
+   ============================================ */
+
+.ux-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.ux-example {
+  margin: 0;
+}
+
+.ux-example__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-small);
+}
+
+.ux-example figcaption {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .ux-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ============================================
    MINI CASE STUDY
@@ -1127,12 +1132,6 @@ button:focus-visible {
   .case-section__heading {
     grid-template-columns: 1fr;
     gap: 7px;
-  }
-
-  .problem-visual__sources,
-  .lifecycle-grid,
-  .results-grid {
-    grid-template-columns: 1fr;
   }
 
   .source-card {
