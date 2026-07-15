@@ -640,9 +640,9 @@ code {
 }
 
 .problem-visual__connector span:first-child {
-  width: 1px;
+  width: 2px;
   height: 32px;
-  background: currentColor;
+  background: var(--redline);
 }
 
 .problem-visual__arrow {
