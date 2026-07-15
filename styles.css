@@ -84,6 +84,8 @@ p:first-child {
   margin-top: 0;
 }
 
+/* Mono is reserved for code samples only — the exact strings
+   someone might copy or type (URLs, subdomain placeholders, etc). */
 code {
   overflow-wrap: anywhere;
   font-family: var(--font-mono);
@@ -150,7 +152,6 @@ code {
 
 .brand {
   color: var(--ink);
-  font-family: var(--font-mono);
   font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -160,7 +161,6 @@ code {
   display: flex;
   align-items: center;
   gap: 24px;
-  font-family: var(--font-mono);
   font-size: 13px;
   letter-spacing: 0.02em;
 }
@@ -203,7 +203,6 @@ code {
 .eyebrow {
   margin: 0 0 32px;
   color: var(--teal);
-  font-family: var(--font-mono);
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.08em;
@@ -237,7 +236,6 @@ code {
   flex: 0 0 auto;
   margin-top: 3px;
   padding: 3px 8px;
-  font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.06em;
   border-radius: 2px;
@@ -279,7 +277,6 @@ code {
 .redline-arrow {
   margin: 10px 0;
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 20px;
   line-height: 1;
   text-align: center;
@@ -337,15 +334,35 @@ code {
   min-width: 0;
 }
 
-@media (max-width: 680px) {
-  .about-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+.filed-under {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
-  .about-photo {
-    width: 130px;
-  }
+.about-intro {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-size: clamp(25px, 4vw, 34px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.about-text {
+  max-width: 66ch;
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
 }
 
 /* ============================================
@@ -365,7 +382,6 @@ code {
 .domain-nav a {
   padding: 7px 14px;
   color: var(--ink-soft);
-  font-family: var(--font-mono);
   font-size: 12px;
   text-decoration: none;
   border: 1px solid var(--border);
@@ -456,7 +472,6 @@ code {
 .project-card__label {
   margin: 0 0 14px;
   color: var(--teal);
-  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
   line-height: 1.5;
@@ -464,8 +479,8 @@ code {
   text-transform: uppercase;
 }
 
-.project-card > h3,
-.project-card__header h3 {
+.project-card > h2,
+.project-card__header h2 {
   margin: 0;
   font-size: clamp(30px, 4vw, 49px);
   font-weight: 600;
@@ -525,7 +540,6 @@ code {
   display: block;
   margin-bottom: 4px;
   color: var(--ink);
-  font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -557,14 +571,12 @@ code {
 .case-section__number {
   margin: 0;
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 12px;
 }
 
 .case-section__eyebrow {
   margin: 0 0 10px;
   color: var(--teal);
-  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -615,7 +627,6 @@ code {
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(32, 29, 26, 0.04);
-  font-family: var(--font-mono);
   font-size: 13px;
   line-height: 1.45;
   text-align: center;
@@ -645,14 +656,13 @@ code {
   margin: 0 auto;
   padding: clamp(22px, 3vw, 32px);
   background: var(--redline-soft);
-  border: 1px solid rgba(166, 62, 44, 0.25);
+  border: 1px solid rgba(126, 20, 2, 0.25);
   border-radius: var(--radius-medium);
 }
 
 .problem-visual__outcome-label {
   margin: 0 0 10px;
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -699,7 +709,6 @@ code {
 
 .lifecycle-step span {
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 11px;
 }
 
@@ -783,7 +792,6 @@ code {
 .responsibility-column__label {
   margin: 0 0 18px;
   color: var(--teal);
-  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -879,7 +887,6 @@ code {
   margin-top: 16px;
   padding-bottom: 1px;
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 13px;
   line-height: 1.5;
   text-decoration: none;
@@ -913,7 +920,6 @@ code {
 
 .mini-case-study__block span {
   color: var(--redline);
-  font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -953,7 +959,6 @@ code {
 .masthead-list li {
   padding: 7px 12px;
   color: var(--ink-soft);
-  font-family: var(--font-mono);
   font-size: 13px;
   background: var(--panel-light);
   border: 1px solid var(--border);
@@ -984,7 +989,6 @@ code {
 .footer-links {
   margin: 0;
   color: var(--ink-soft);
-  font-family: var(--font-mono);
   font-size: 13px;
 }
 
@@ -1047,117 +1051,6 @@ button:focus-visible {
    RESPONSIVE: MOBILE
    ============================================ */
 
-/* ============================================
-   RESPONSIVE: MOBILE
-   ============================================ */
-
-@media (max-width: 680px) {
-  body {
-    font-size: 16px;
-  }
-
-  .site-header {
-    padding: 16px 18px;
-  }
-
-  .primary-nav {
-    gap: 14px;
-    font-size: 12px;
-  }
-   
-  .nav-resume {
-    padding: 5px 8px;
-  }
-
-  .hero,
-  .about,
-  .domain-nav {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .hero {
-    padding-top: 48px;
-  }
-
-  .hero-headline {
-    font-size: 36px;
-  }
-
-  .redline {
-    padding: 18px;
-  }
-
-  .redline-row {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .redline-tag {
-    margin-top: 0;
-  }
-
-  .projects {
-    width: min(100% - 24px, var(--wide-measure));
-    padding: 56px 18px 72px;
-  }
-
-  .project-card {
-    min-height: auto;
-    border-radius: 18px;
-  }
-
-  .project-card--featured {
-    border-radius: 20px;
-  }
-
-  .project-card__meta {
-    grid-template-columns: 1fr;
-  }
-
-  .case-section__heading {
-    grid-template-columns: 1fr;
-    gap: 7px;
-  }
-
-  .problem-visual__sources,
-  .lifecycle-grid,
-  .results-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .source-card {
-    min-height: 68px;
-  }
-
-  .responsibility-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .mini-case-study__block {
-    grid-template-columns: 1fr;
-    gap: 7px;
-  }
-
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .footer-links span {
-    display: none;
-  }
-}
-
-/* ============================================
-   RESPONSIVE: SMALL MOBILE
-   ============================================ */
-
-/* ============================================
-   RESPONSIVE: MOBILE
-   ============================================ */
-
 @media (max-width: 680px) {
   body {
     font-size: 16px;
@@ -1189,6 +1082,15 @@ button:focus-visible {
 
   .hero-headline {
     font-size: 36px;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-photo {
+    width: 130px;
   }
 
   .redline {
