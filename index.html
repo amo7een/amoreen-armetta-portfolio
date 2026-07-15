@@ -515,9 +515,14 @@ I create documentation and UX content that helps people use those products with 
 
   <!-- UX IMAGE GALLERY STARTS HERE -->
 
-  <div class="ux-gallery">
+ <div class="ux-gallery">
 
-    <figure class="ux-example">
+  <figure class="ux-example">
+    <button
+      class="ux-example__button"
+      type="button"
+      aria-label="Enlarge permissions guidance example"
+    >
       <img
         class="ux-example__image"
         src="assets/ux-permissions.png"
@@ -526,13 +531,19 @@ I create documentation and UX content that helps people use those products with 
         height="353"
         loading="lazy"
       >
+    </button>
 
-      <figcaption>
-        Explained how guest permissions differ between free and paid plans.
-      </figcaption>
-    </figure>
+    <figcaption>
+      Explained how guest permissions differ between free and paid plans.
+    </figcaption>
+  </figure>
 
-    <figure class="ux-example">
+  <figure class="ux-example">
+    <button
+      class="ux-example__button"
+      type="button"
+      aria-label="Enlarge free and paid plan comparison"
+    >
       <img
         class="ux-example__image"
         src="assets/ux-free-paid-plans.png"
@@ -541,14 +552,19 @@ I create documentation and UX content that helps people use those products with 
         height="367"
         loading="lazy"
       >
+    </button>
 
-      <figcaption>
-        Clarified plan differences at the point where users invited Workspace
-        members.
-      </figcaption>
-    </figure>
+    <figcaption>
+      Clarified plan differences when users invited Workspace members.
+    </figcaption>
+  </figure>
 
-    <figure class="ux-example">
+  <figure class="ux-example">
+    <button
+      class="ux-example__button"
+      type="button"
+      aria-label="Enlarge members and guests guidance"
+    >
       <img
         class="ux-example__image"
         src="assets/ux-members-guests.png"
@@ -557,14 +573,40 @@ I create documentation and UX content that helps people use those products with 
         height="364"
         loading="lazy"
       >
+    </button>
 
-      <figcaption>
-        Defined members and guests so users could choose the appropriate role.
-      </figcaption>
-    </figure>
+    <figcaption>
+      Defined members and guests so users could choose the appropriate role.
+    </figcaption>
+  </figure>
 
-  </div>
+</div>
 
+<dialog
+  class="image-lightbox"
+  id="image-lightbox"
+  aria-labelledby="image-lightbox-caption"
+>
+  <button
+    class="image-lightbox__close"
+    type="button"
+    aria-label="Close enlarged image"
+  >
+    ×
+  </button>
+
+  <img
+    class="image-lightbox__image"
+    id="image-lightbox-image"
+    src=""
+    alt=""
+  >
+
+  <p
+    class="image-lightbox__caption"
+    id="image-lightbox-caption"
+  ></p>
+</dialog>
   <!-- UX IMAGE GALLERY ENDS HERE -->
 
 </article>
