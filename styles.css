@@ -84,7 +84,7 @@ p:first-child {
   margin-top: 0;
 }
 
-/* Mono is reserved for code samples only â€” the exact strings
+/* Mono is reserved for code samples only — the exact strings
    someone might copy or type (URLs, subdomain placeholders, etc). */
 code {
   overflow-wrap: anywhere;
@@ -939,10 +939,6 @@ code {
 
 
 /* ============================================
-   IMAGE LIGHTBOX
-   ============================================ */
-
-./* ============================================
    IMAGE LIGHTBOX
    ============================================ */
 
