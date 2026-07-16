@@ -50,6 +50,9 @@
   const closeButton = document.querySelector(".image-lightbox__close");
   const imageButtons = document.querySelectorAll(".ux-example__button");
 
+  let lastTrigger = null;
+  let savedScrollPosition = 0;
+
   if (
     !lightbox ||
     !lightboxImage ||
@@ -72,6 +75,9 @@
         return;
       }
 
+      lastTrigger = button;
+      savedScrollPosition = window.scrollY;
+
       lightboxImage.src = image.src;
       lightboxImage.alt = image.alt;
       lightboxCaption.textContent = caption
@@ -86,25 +92,29 @@
     lightbox.close();
   });
 
-  // Close the lightbox when the backdrop is clicked.
   lightbox.addEventListener("click", function (event) {
-    const lightboxBounds = lightbox.getBoundingClientRect();
+    const bounds = lightbox.getBoundingClientRect();
 
     const clickedInside =
-      event.clientX >= lightboxBounds.left &&
-      event.clientX <= lightboxBounds.right &&
-      event.clientY >= lightboxBounds.top &&
-      event.clientY <= lightboxBounds.bottom;
+      event.clientX >= bounds.left &&
+      event.clientX <= bounds.right &&
+      event.clientY >= bounds.top &&
+      event.clientY <= bounds.bottom;
 
     if (!clickedInside) {
       lightbox.close();
     }
   });
 
-  // Clear the enlarged image after the dialog closes.
   lightbox.addEventListener("close", function () {
     lightboxImage.src = "";
     lightboxImage.alt = "";
     lightboxCaption.textContent = "";
+
+    window.scrollTo(0, savedScrollPosition);
+
+    if (lastTrigger) {
+      lastTrigger.focus({ preventScroll: true });
+    }
   });
 })();
