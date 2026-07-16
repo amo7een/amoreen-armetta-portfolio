@@ -332,8 +332,9 @@ code {
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 200px;
   object-fit: cover;
+  object-position: center;
   border: 1px solid var(--border);
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-small);
@@ -1176,7 +1177,6 @@ button:focus-visible {
     font-size: 12px;
   }
 
-
   .hero,
   .about,
   .domain-nav {
@@ -1197,9 +1197,10 @@ button:focus-visible {
     gap: 20px;
   }
 
-  .about-photo {
-    width: 130px;
-  }
+.about-photo {
+  width: 130px;
+  height: 130px;
+}
 
   .redline {
     padding: 18px;
