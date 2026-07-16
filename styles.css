@@ -332,9 +332,10 @@ code {
 
 .about-photo {
   width: 100%;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 867 / 1300;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border: 1px solid var(--border);
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-small);
@@ -1199,7 +1200,7 @@ button:focus-visible {
 
 .about-photo {
   width: 130px;
-  height: 130px;
+  height: auto;
 }
 
   .redline {
