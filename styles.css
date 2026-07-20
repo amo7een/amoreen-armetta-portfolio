@@ -820,6 +820,8 @@ code {
   line-height: 1.1;
 }
 
+.case-section__note { max-width: 680px; margin: 20px 0 0; color: var(--ink-soft); font-size: 13px; font-style: italic; line-height: 1.6; }
+
 .result-card span {
   display: block;
   margin-top: 12px;
