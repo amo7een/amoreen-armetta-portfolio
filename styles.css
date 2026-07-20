@@ -663,7 +663,7 @@ code {
 }
 
 .problem-visual__outcome {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
   padding: clamp(22px, 3vw, 32px);
   background: var(--redline-soft);
