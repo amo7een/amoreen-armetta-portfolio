@@ -384,7 +384,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  max-width: var(--measure);
+  max-width: 800px; 
   margin: 0 auto;
   padding: 0 24px 40px;
   border-bottom: 1px solid var(--border);
