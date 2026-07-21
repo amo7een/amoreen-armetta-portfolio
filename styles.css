@@ -1099,7 +1099,7 @@ code {
 .masthead-list li:not(:last-child)::after {
   content: "·";
   margin-left: 10px;
-  color: var(--border);
+  color: var(--ink-soft);
 }
 
 
