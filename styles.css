@@ -1037,6 +1037,12 @@ code {
   margin: 0 auto;
 }
 
+.ux-example__image[src$="Agents-best-prompting-practices.gif"] {
+  width: auto;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media (max-width: 680px) {
   .image-lightbox {
     width: calc(100vw - 20px);
