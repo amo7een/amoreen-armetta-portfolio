@@ -1092,16 +1092,14 @@ code {
 }
 
 .masthead-list li {
-  padding: 7px 12px;
   color: var(--ink-soft);
   font-size: 13px;
-  background: var(--panel-light);
-  border: 1px solid var(--border);
-  border-radius: 20px;
 }
 
-.masthead-list li::after {
-  content: none;
+.masthead-list li:not(:last-child)::after {
+  content: "·";
+  margin-left: 10px;
+  color: var(--border);
 }
 
 
