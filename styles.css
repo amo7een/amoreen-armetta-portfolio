@@ -1025,7 +1025,11 @@ code {
   outline-offset: 2px;
 }
 
-.image-lightbox__image[src$="sprint-settings-modal.png"] { width: auto; max-width: 375px; }
+.ux-example__image[src$="Automations-feature-availability-limits.png"] {
+  width: auto;
+  max-height: 320px;
+  margin: 0 auto;
+}
 
 @media (max-width: 680px) {
   .image-lightbox {
