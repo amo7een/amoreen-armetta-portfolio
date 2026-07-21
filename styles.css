@@ -1043,6 +1043,12 @@ code {
   margin: 0 auto;
 }
 
+.ux-example__image[src$="Configure-OIDC-settings-1.png"] {
+  width: auto;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 @media (max-width: 680px) {
   .image-lightbox {
     width: calc(100vw - 20px);
