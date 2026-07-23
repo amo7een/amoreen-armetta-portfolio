@@ -579,9 +579,10 @@ code {
    ============================================ */
 
 .case-section {
-  padding-top: clamp(16px, 3vw, 32px);
-  padding-bottom: clamp(32px, 5vw, 56px);
+  padding-top: clamp(8px, 2vw, 16px);
+  padding-bottom: clamp(24px, 4vw, 40px);
   border-bottom: 1px solid var(--border);
+}
 }
 
 .case-section:last-child {
