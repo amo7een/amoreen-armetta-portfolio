@@ -313,6 +313,22 @@ code {
   line-height: 1.4;
 }
 
+.hero-cta {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: var(--teal);
+  color: var(--surface) !important;
+  border-radius: var(--radius-small);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-cta:hover,
+.hero-cta:focus-visible {
+  background: var(--ink);
+}
+
 /* ============================================
    ABOUT
    ============================================ */
