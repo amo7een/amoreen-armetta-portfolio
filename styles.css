@@ -579,7 +579,8 @@ code {
    ============================================ */
 
 .case-section {
-  padding: clamp(32px, 5vw, 56px) 0;
+  padding-top: clamp(16px, 3vw, 32px);
+  padding-bottom: clamp(32px, 5vw, 56px);
   border-bottom: 1px solid var(--border);
 }
 
