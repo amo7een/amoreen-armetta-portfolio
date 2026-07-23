@@ -579,7 +579,7 @@ code {
    ============================================ */
 
 .case-section {
-  padding: clamp(48px, 7vw, 88px) 0;
+  padding: clamp(32px, 5vw, 56px) 0;
   border-bottom: 1px solid var(--border);
 }
 
