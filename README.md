@@ -2,7 +2,7 @@
 
 This repository contains the source files for my professional portfolio.
 
-I’m a senior technical writer and UX writer with eight years of experience helping people navigate complex enterprise SaaS products. My work spans documentation, in-product guidance, content strategy, and the systems that keep content accurate, consistent, and scalable.
+I’m a senior technical writer and UX writer with 7+ years of experience helping people navigate complex enterprise SaaS products. My work spans documentation, in-product guidance, content strategy, and the systems that keep content accurate, consistent, and scalable.
 
 ## View the portfolio
 
@@ -13,7 +13,7 @@ I’m a senior technical writer and UX writer with eight years of experience hel
 The portfolio includes examples of:
 
 - An AI-assisted documentation operations system
-- UX writing for billing and permissions
+- UX writing for permissions
 - Scalable content systems for complex SaaS products
 - Documentation for AI and identity and access management
 - Cross-functional editorial and product-language work
