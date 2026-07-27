@@ -583,7 +583,6 @@ code {
   padding-bottom: clamp(24px, 4vw, 40px);
   border-bottom: 1px solid var(--border);
 }
-}
 
 .case-section:last-child {
   padding-bottom: 0;
