@@ -510,7 +510,7 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
 
               <p>
                 I designed a reusable content model in Zendesk so each feature group’s availability and limits could be defined once and referenced across every 
-                article in the feature group, rather than duplicated in each article. I styled the callout with custom CSS to match ClickUp’s brand.
+                article in the feature group, rather than duplicated in each article. I styled the callout with custom CSS to match ClickUp's brand.
               </p>
             </section>
 
@@ -679,39 +679,46 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
           </p>
 
           <div class="project-samples">
-            <section class="project-sample">
-              <h3>
-                Configure OpenID Connect for Okta
-              </h3>
+    <section class="project-sample">
+      <h3>
+        Configure custom SAML single sign-on
+      </h3>
 
-              <p>
-                Partnered with an identity and access management product manager and engineer to document an enterprise OIDC configuration for public-view authentication. I validated the setup process step by 
-                step and translated it into clear customer guidance.
-              </p>
+      <p>
+     I worked with product and engineering to turn complex SAML requirements into clear setup guidance for enterprise administrators. The article explains the required NameID assertion, identifies the values 
+        admins need to share with their IT teams, and clarifies how the identity provider and ClickUp exchange information securely.
+      </p>
+      <p> 
+        The goal was to help administrators understand both what to configure and why each value mattered, without needing to have identity-management expertise.
+      </p>
+    </section>
+  </div>
 
-              <figure class="ux-example">
-                <button
-                  class="ux-example__button"
-                  type="button"
-                  aria-label="Enlarge Configure OpenID Connect for Okta article"
-                >
-                  <img
-                    class="ux-example__image"
-                    src="assets/Configure-OIDC-settings-1.png"
-                    alt="Two paragraphs explaining how to configure the OIDC settings and additional settings."
-                    width="916"
-                    height="785"
-                    loading="lazy"
-                  >
-                </button>
+  <div class="ux-gallery">
 
-                <figcaption>
-                  Explaining how to copy the Discovery Document URL, the Client ID value, and the Client Secret value. Paragraphs confirm what to copy in Okta and what will subsequently populate in ClickUp. 
-                </figcaption>
-              </figure>
-            </section>
-          </div>
-        </article>
+    <figure class="ux-example">
+      <button
+        class="ux-example__button"
+        type="button"
+        aria-label="Enlarge SAML assertion requirements and IDP configuration steps"
+      >
+        <img
+          class="ux-example__image"
+          src="assets/Configure-IDP-solution.png"
+          alt="alt="ClickUp Help Center excerpt explaining SAML assertion requirements, including the required unique NameID, and listing the Audience URI, single sign-on URL, and optional SP certificate needed 
+          to configure an identity provider."
+          width="1,672"
+          height="890"
+          loading="lazy"
+        >
+      </button>
+
+      <figcaption>
+        The steps explain the required NameID assertion and the SAML values administrators need to share with their IT teams before configuring ClickUp.
+      </figcaption>
+    </figure>
+
+  </div>
 
         <!-- ============ API DOCUMENTATION ============ -->
 
@@ -787,7 +794,7 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
           </h2>
 
           <p class="project-card__summary">
-            I’ve always identified the essential ideas and found the clearest way to explain them.
+            I've always identified the essential ideas and found the clearest way to explain them.
           </p>
 
           <p class="editorial-intro">
