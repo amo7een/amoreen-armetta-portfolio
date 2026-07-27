@@ -323,7 +323,7 @@ I create documentation and UX content that help people use those products with c
                 <span>Review and publish</span>
                 <p>
                  Writers verify product behavior, identify user needs, restructure and rewrite the draft, confirm accuracy with subject-matter experts, align the 
-                  article with the broader content strategy, and publish the final content..
+                  article with the broader content strategy, and publish the final content.
                 </p>
               </div>
             </div>
@@ -444,7 +444,10 @@ I create documentation and UX content that help people use those products with c
       </h3>
 
       <p>
-Contextual guidance explains the required {INDEX} variable, helping prevent configuration errors and support requests.
+ I wrote contextual help for a Sprint settings modal that had become a
+  recurring source of user confusion and support tickets. The tooltip explains
+  why <code>{INDEX}</code> is required and how it appears in generated Sprint
+  names.
       </p>
     </section>
   </div>
@@ -468,7 +471,8 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
       </button>
 
       <figcaption>
-       The tooltip explains that there's a required variable, helping prevent configuration errors and support requests.
+        The guidance appears at the point of use, before users save the Sprint
+  configuration.
       </figcaption>
     </figure>
 
@@ -509,8 +513,10 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
               <span>Approach</span>
 
               <p>
-                I designed a reusable content model in Zendesk so each feature group’s availability and limits could be defined once and referenced across every 
-                article in the feature group, rather than duplicated in each article. I styled the callout with custom CSS to match ClickUp's brand.
+                I designed a reusable content model in Zendesk that centralized each
+    feature group’s plan, pricing, and permission details in a single source
+    article. Every related article included a callout linking to that source.
+    I styled the callout with custom CSS to match ClickUp’s brand.
               </p>
             </section>
 
@@ -518,7 +524,9 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
               <span>Result</span>
 
               <p>
-                When plan, pricing, or permission information changed, only the source article needed to be updated.
+                 When the information changed, I updated one source article instead of
+    every article in the feature group. This reduced duplicate maintenance
+    and helped keep the guidance consistent.
               </p>
             </section>
           </div>
@@ -532,7 +540,7 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
                   <img
                     class="ux-example__image"
                     src="assets/What-youll-need.png"
-                    alt="The reusable "What you'll need" callout in the "Intro to Automations" help article, styled to match ClickUp's brand color."
+                    alt="The source article centralized plan availability, usage limits, and role requirements for the Automations feature."
                     width="456"
                     height="339"
                     loading="lazy"
@@ -671,7 +679,7 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
           </p>
 
           <h2>
-            Documenting enterprise custom SAL single sign-on configuration through SME collaboration
+            Documenting enterprise SAML configuration through SME collaboration
           </h2>
 
           <p class="project-card__summary">
@@ -685,11 +693,12 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
       </h3>
 
       <p>
-     I worked with product and engineering to turn complex SAML requirements into clear setup guidance for enterprise administrators. The article explains the required NameID assertion, identifies the values 
+     I worked with product and engineering to turn complex SAML requirements into clear setup guidance for enterprise administrators. The article explains the 
+        required NameID assertion, identifies the values 
         admins need to share with their IT teams, and clarifies how the identity provider and ClickUp exchange information securely.
       </p>
       <p> 
-        The goal was to help administrators understand both what to configure and why each value mattered, without needing to have identity-management expertise.
+        The goal was to help administrators understand what to configure and why each value mattered, without requiring identity-management expertise.
       </p>
     </section>
   </div>
@@ -705,9 +714,9 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
         <img
           class="ux-example__image"
           src="assets/Configure-IDP-solution.png"
-          alt="alt="ClickUp Help Center excerpt explaining SAML assertion requirements, including the required unique NameID, and listing the Audience URI, single sign-on URL, and optional SP certificate needed 
+          alt="ClickUp Help Center excerpt explaining SAML assertion requirements, including the required unique NameID, and listing the Audience URI, single sign-on URL, and optional SP certificate needed 
           to configure an identity provider."
-          width="1,672"
+          width="1672"
           height="890"
           loading="lazy"
         >
@@ -731,11 +740,14 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
   </p>
 
   <h2>
-    Writing API reference documentation developers can build against
+    Documenting an OAuth access-token endpoint
   </h2>
 
   <p class="project-card__summary">
-   I authored the original reference page for ClickUp’s OAuth access-token endpoint. I worked with engineers to confirm the request body parameters and Content-Type header, tested the endpoint in Postman, and published the page using Redocly.
+   I authored and published the original reference page for ClickUp’s OAuth
+  access-token endpoint. I worked with engineers to validate the request body
+  parameters and <code>Content-Type</code> header, tested the endpoint in
+  Postman, and published the page using Redocly.
   </p>
 
   <div class="project-samples">
@@ -745,10 +757,9 @@ Contextual guidance explains the required {INDEX} variable, helping prevent conf
       </h3>
 
       <p>
-       My primary writing contribution was the introductory guidance explaining
-  where the endpoint fits in the OAuth flow, why applications using personal
-  API tokens do not need it, and why the endpoint cannot be tested through the
-  browser-based Try It feature.
+      The page places the endpoint within ClickUp’s OAuth flow, distinguishes
+      it from personal-token authentication, and explains why it cannot be
+      tested through the browser-based Try It feature.
       </p>
     </section>
   </div>
