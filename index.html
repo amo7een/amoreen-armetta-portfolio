@@ -293,10 +293,9 @@ I create documentation and UX content that help people use those products with c
 
             <div class="workflow-preview">
               <div class="workflow-step">
-                <span>Collect product info</span>
+                <span>Collect product context</span>
                 <p>
-                  Search product briefs, engineering work, conversations, and release
-                  information.
+                 Review product briefs, engineering tickets, Slack conversations, and release information.
                 </p>
               </div>
 
@@ -312,7 +311,7 @@ I create documentation and UX content that help people use those products with c
               <div class="workflow-arrow" aria-hidden="true">↓</div>
 
               <div class="workflow-step">
-                <span>Generate a first draft</span>
+                <span>Generate a starting point</span>
                 <p>
                   Create a draft and flag potential terminology, style, accessibility, and consistency issues.
                 </p>
@@ -323,7 +322,8 @@ I create documentation and UX content that help people use those products with c
               <div class="workflow-step workflow-step">
                 <span>Review and publish</span>
                 <p>
-                  Writers verify product behavior, determine user needs, restructure and rewrite the content. Then writers confirm accuracy with subject-matter experts, ensure article fits with overall content strategy, and manually publish.
+                 Writers verify product behavior, identify user needs, restructure and rewrite the draft, confirm accuracy with subject-matter experts, align the 
+                  article with the broader content strategy, and publish the final content..
                 </p>
               </div>
             </div>
@@ -340,7 +340,7 @@ I create documentation and UX content that help people use those products with c
                 <p class="case-section__eyebrow">The result</p>
 
                 <h3>
-                  A faster, more consistent documentation operation
+                  A more scalable, consistent documentation operation
                 </h3>
               </div>
             </div>
@@ -368,9 +368,9 @@ I create documentation and UX content that help people use those products with c
             </div>
 
             <p class="case-section__note">
-            <strong>How the baseline was measured:</strong> Based on ticket time-tracking data from the three-person writing team, which showed roughly  
-              three hours a day spent searching engineering roadmaps and backlogs, Slack conversations, ticket comments, and product briefs, and asking 
-              subject matter experts questions, to understand exactly what was being updated.
+            <strong>How the baseline was measured:</strong> Ticket time-tracking data showed that each writer spent roughly three hours a day reviewing engineering 
+              roadmaps and backlogs, Slack conversations, ticket comments, and product briefs, and consulting subject-matter experts to understand what was
+              changing.
             </p>
           </section>
         </article>
@@ -392,7 +392,7 @@ I create documentation and UX content that help people use those products with c
   </h2>
 
   <p class="project-card__summary">
-  At ClickUp, technical writers contributed directly to in-product terminology because there was no dedicated UX writing team.
+  At ClickUp, technical writers partnered with product designers to shape in-product terminology and guidance.
 </p>
 
 <div class="project-samples">
@@ -421,7 +421,7 @@ I create documentation and UX content that help people use those products with c
       <img
         class="ux-example__image"
         src="assets/UX-permissions-modal.png"
-        alt="ClickUp sharing menu showing Full, Edit, and Comment permission levels with descriptions of what each level allows."
+        alt="ClickUp sharing menu showing Full edit, Edit, Comment, and View only permission levels, with descriptions of what each level allows."
        width="687"
       height="590"
         loading="lazy"
@@ -444,7 +444,7 @@ I create documentation and UX content that help people use those products with c
       </h3>
 
       <p>
-I wrote contextual help for a Sprint settings modal that had become a recurring source of user confusion and support tickets. The tooltip explains that the {INDEX} variable is required and how it appears in automatically generated Sprint names, helping users configure the setting correctly without leaving the workflow.
+Contextual guidance explains the required {INDEX} variable, helping prevent configuration errors and support requests.
       </p>
     </section>
   </div>
@@ -509,11 +509,8 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
               <span>Approach</span>
 
               <p>
-                Designed a custom reusable content system so availability and limits
-                information could be defined once and referenced across every article in the feature group, rather than duplicated in each article.
-              </p>
-              <p>
-                I designed a reusable content model in Zendesk and styled it with custom CSS to match ClickUp’s brand.
+                I designed a reusable content model in Zendesk so each feature group’s availability and limits could be defined once and referenced across every 
+                article in the feature group, rather than duplicated in each article. I styled the callout with custom CSS to match ClickUp’s brand.
               </p>
             </section>
 
@@ -521,8 +518,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
               <span>Result</span>
 
               <p>
-                Pricing and packaging changes required one update instead of
-                dozens, reducing maintenance work and content drift.
+                When plan, pricing, or permission information changed, only the source article needed to be updated.
               </p>
             </section>
           </div>
@@ -600,8 +596,8 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
               </h3>
 
               <p>
-                Created a new help center article format to teach customers how
-                to prompt AI agents effectively. This example shows how specific, consistent terminology reduces ambiguity and gives the agent clearer context. 
+                I created a new Help Center article format to teach customers how to prompt AI agents effectively. The guidance emphasized specific, consistent 
+                terminology to reduce ambiguity and give the agent clearer context.
               </p>
               
               <figure class="ux-example">
@@ -613,7 +609,8 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
                   <img
                     class="ux-example__image"
                     src="assets/Agents-best-prompting-practices.gif"
-                    alt="Comparison of a good prompt and an optimized Super Agent prompt, with an example input box demonstrating how generic language like 'a content and insights agent' is replaced 
+                    alt="Comparison of a good prompt and an optimized Super Agent prompt, with an example input box demonstrating how generic language like 'a 
+                    content and insights agent' is replaced 
                     with more specific, descriptive language."
                     width="835"
                     height="542"
@@ -622,7 +619,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
                 </button>
 
                 <figcaption>
-                  Rich, consistent language reduces ambiguity and gives the Super Agent clearer context for the task.
+                  The example contrasts a generic role description with a more specific prompt that defines the agent’s expertise and task.
                 </figcaption>
               </figure>
             </section>
@@ -731,10 +728,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
   </h2>
 
   <p class="project-card__summary">
-    I authored the original reference page for ClickUp’s OAuth access-token
-  endpoint. I worked with engineers to confirm the request body parameters and
-  content-type header, tested the endpoint in Postman, and published the page
-  using Redocly.
+   I authored the original reference page for ClickUp’s OAuth access-token endpoint. I worked with engineers to confirm the request body parameters and Content-Type header, tested the endpoint in Postman, and published the page using Redocly.
   </p>
 
   <div class="project-samples">
@@ -771,7 +765,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
       </button>
 
       <figcaption>
-       The reference explains when to use the endpoint and documents its required body parameters, supported content types, and expected 200 response.
+      The reference explains when to use the endpoint and documents its required body parameters, supported content types, and successful 200 response.
       </figcaption>
     </figure>
 
