@@ -171,6 +171,7 @@ I create documentation and UX content that help people use those products with c
       <a href="#pricing-packaging">Pricing &amp; Packaging</a>
       <a href="#ai-content">AI Content</a>
       <a href="#identity">Identity &amp; Access</a>
+      <a href="#api-documentation">API Documentation</a>
       <a href="#editorial">Editorial</a>
     </nav>
 
@@ -715,6 +716,66 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
           </div>
         </article>
 
+        <!-- ============ API DOCUMENTATION ============ -->
+
+<article
+  id="api-documentation"
+  class="project-card reveal"
+>
+  <p class="project-card__label">
+    API documentation · Developer reference
+  </p>
+
+  <h2>
+    Writing API reference documentation developers can build against
+  </h2>
+
+  <p class="project-card__summary">
+    Unclear reference documentation costs developers implementation time.
+    I wrote and maintained endpoint documentation that flagged authentication
+    requirements, edge cases, and tooling limitations before developers hit
+    them.
+  </p>
+
+  <div class="project-samples">
+    <section class="project-sample">
+      <h3>
+        OAuth: Get Access Token endpoint
+      </h3>
+
+      <p>
+        Documented the token endpoint developers use to complete ClickUp's
+        OAuth flow, including which apps don't need it and a testing
+        limitation that would otherwise cost a failed request.
+      </p>
+    </section>
+  </div>
+
+  <div class="ux-gallery">
+
+    <figure class="ux-example">
+      <button
+        class="ux-example__button"
+        type="button"
+        aria-label="Enlarge Get Access Token API reference page"
+      >
+        <img
+          class="ux-example__image"
+          src="assets/Get-Access-Token-API.png"
+          alt="ClickUp API reference for the POST OAuth access-token endpoint, showing usage guidance, required client ID, client secret, and authorization code parameters, the content-type header, a request example, and a successful response."
+          width="1248"
+          height="1872"
+          loading="lazy"
+        >
+      </button>
+
+      <figcaption>
+       The published reference combines usage guidance with required request parameters, headers, and generated code examples.
+      </figcaption>
+    </figure>
+
+  </div>
+</article>
 
         <!-- ============ EDITORIAL ============ -->
 
