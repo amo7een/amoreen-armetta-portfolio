@@ -38,11 +38,25 @@
   targets.forEach(function (element) {
     observer.observe(element);
   });
+
+  // Anchor-link navigation can jump past sections faster than the
+  // IntersectionObserver can register them, leaving skipped sections
+  // permanently hidden. Reveal everything on any in-page jump so
+  // content is never left blank.
+  function revealOnJump() {
+    targets.forEach(function (element) {
+      element.classList.add("is-visible");
+    });
+  }
+
+  window.addEventListener("hashchange", revealOnJump);
+  if (window.location.hash) {
+    revealOnJump();
+  }
 })();
 
 
 // Open UX-writing examples in an accessible image lightbox.
-
 (function () {
   const lightbox = document.querySelector("#image-lightbox");
   const lightboxImage = document.querySelector("#image-lightbox-image");
