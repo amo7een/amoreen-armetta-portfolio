@@ -731,10 +731,10 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
   </h2>
 
   <p class="project-card__summary">
-    Unclear reference documentation costs developers implementation time.
-    I wrote and maintained endpoint documentation that flagged authentication
-    requirements, edge cases, and tooling limitations before developers hit
-    them.
+    I authored the original reference page for ClickUp’s OAuth access-token
+  endpoint. I worked with engineers to confirm the request body parameters and
+  content-type header, tested the endpoint in Postman, and published the page
+  using Redocly.
   </p>
 
   <div class="project-samples">
@@ -744,9 +744,10 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
       </h3>
 
       <p>
-        Documented the token endpoint developers use to complete ClickUp's
-        OAuth flow, including which apps don't need it and a testing
-        limitation that would otherwise cost a failed request.
+       My primary writing contribution was the introductory guidance explaining
+  where the endpoint fits in the OAuth flow, why applications using personal
+  API tokens do not need it, and why the endpoint cannot be tested through the
+  browser-based Try It feature.
       </p>
     </section>
   </div>
@@ -762,7 +763,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
         <img
           class="ux-example__image"
           src="assets/Get-Access-Token-API.png"
-          alt="ClickUp API reference for the POST OAuth access-token endpoint, showing usage guidance, required client ID, client secret, and authorization code parameters, the content-type header, a request example, and a successful response."
+          alt="ClickUp API reference for the POST OAuth access-token endpoint, showing usage guidance, required client ID, client secret, and authorization code parameters, supported content types, and a 200 response."
           width="1248"
           height="1872"
           loading="lazy"
@@ -770,7 +771,7 @@ I wrote contextual help for a Sprint settings modal that had become a recurring 
       </button>
 
       <figcaption>
-       The published reference combines usage guidance with required request parameters, headers, and generated code examples.
+       The reference explains when to use the endpoint and documents its required body parameters, supported content types, and expected 200 response.
       </figcaption>
     </figure>
 
