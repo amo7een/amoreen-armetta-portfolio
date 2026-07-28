@@ -1072,11 +1072,13 @@ code {
 }
 
 .ux-example__image[src$="Sprint-settings-modal-UX.png"] {
+  width: auto;
   max-height: 520px;
   margin: 0 auto;
 }
 
 .ux-example__image[src$="Get-Access-Token-API.png"] {
+  width: auto;
   max-height: 520px;
   margin: 0 auto;
 }
