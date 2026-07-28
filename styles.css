@@ -1083,6 +1083,12 @@ code {
   margin: 0 auto;
 }
 
+.ux-example:has(.ux-example__image[src$="Sprint-settings-modal-UX.png"]) figcaption,
+.ux-example:has(.ux-example__image[src$="Get-Access-Token-API.png"]) figcaption,
+.ux-example:has(.ux-example__image[src$="UX-permissions-modal.png"]) figcaption {
+  text-align: center;
+}
+
 @media (max-width: 680px) {
   .image-lightbox {
     width: calc(100vw - 20px);
