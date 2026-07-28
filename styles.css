@@ -1083,9 +1083,7 @@ code {
   margin: 0 auto;
 }
 
-.ux-example:has(.ux-example__image[src$="Sprint-settings-modal-UX.png"]) figcaption,
-.ux-example:has(.ux-example__image[src$="Get-Access-Token-API.png"]) figcaption,
-.ux-example:has(.ux-example__image[src$="UX-permissions-modal.png"]) figcaption {
+.ux-example:only-of-type figcaption {
   text-align: center;
 }
 
