@@ -1060,15 +1060,24 @@ code {
   margin: 0 auto;
 }
 
-.ux-example__image[src$="Configure-OIDC-settings-1.png"] {
+.ux-example__image[src$="AI-models-privacy-security.png"] {
   width: auto;
   max-width: 480px;
   margin: 0 auto;
 }
 
-.ux-example__image[src$="AI-models-privacy-security.png"] {
-  width: auto;
-  max-width: 480px;
+.ux-example__image[src$="UX-permissions-modal.png"] {
+  max-width: 687px;
+  margin: 0 auto;
+}
+
+.ux-example__image[src$="Sprint-settings-modal-UX.png"] {
+  max-height: 520px;
+  margin: 0 auto;
+}
+
+.ux-example__image[src$="Get-Access-Token-API.png"] {
+  max-height: 520px;
   margin: 0 auto;
 }
 
