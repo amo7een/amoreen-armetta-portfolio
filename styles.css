@@ -967,6 +967,7 @@ code {
   color: var(--ink-soft);
   font-size: 13px;
   line-height: 1.5;
+   text-align: center;
 }
 
 .ux-example + .ux-example {
@@ -1085,10 +1086,6 @@ code {
   width: auto;
   max-height: 520px;
   margin: 0 auto;
-}
-
-.ux-example:only-of-type figcaption {
-  text-align: center;
 }
 
 @media (max-width: 680px) {
