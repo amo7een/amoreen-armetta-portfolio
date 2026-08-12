@@ -929,6 +929,13 @@ code {
   margin: 0;
 }
 
+.ux-example--article-excerpt {
+  width: 100%;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ux-example__button {
   display: block;
   width: 100%;
@@ -972,12 +979,6 @@ code {
 
 .ux-example + .ux-example {
   margin-top: 16px;
-}
-
-.ux-example--article-excerpt {
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
