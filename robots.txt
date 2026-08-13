@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amo7een.github.io/amoreen-armetta-portfolio/sitemap.xml
